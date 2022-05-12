@@ -1,0 +1,44 @@
+{
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "eslint.enable": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "dist": false,
+    ".husky": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.code-search": true,
+    "**/dist": true,
+    ".husky": true,
+    "**/webpack": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#32b611",
+    "titleBar.inactiveBackground": "#66ac2c"
+  },
+  "cSpell.words": [
+    "clsx",
+    "esbuild",
+    "fein",
+    "firestore",
+    "postprocessor",
+    "sprintf"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}
