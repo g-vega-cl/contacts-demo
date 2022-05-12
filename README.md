@@ -17,7 +17,8 @@ Interview application for IsoTalent
 
 #### Run development server
 
-`yarn dev`
+- `yarn dev`
+- navigate to localhost:3010
 
 #### Validation
 
