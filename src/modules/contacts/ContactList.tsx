@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Stack, Toolbar, Typography } from '@mui/material';
 import { useContacts } from './hooks/useContacts';
 import { AddContactModal } from './AddContactModal';
+import { Link } from 'react-router-dom';
 
 export const ContactList = () => {
   const { contacts } = useContacts();
@@ -18,7 +19,7 @@ export const ContactList = () => {
       <div>
         <ul>
         {contacts?.map((contact) => {
-          return(<li key={contact.id}>{contact?.data.firstName}</li>)
+          return(<li key={contact.id}><Link to="/edit">{contact?.data.firstName}</Link></li>)
         })}
         </ul>
       </div>
