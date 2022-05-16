@@ -18,7 +18,6 @@ export const useContacts = () => {
           const id = change.doc.id;
           const data = change.doc.data() as Models.Contact;
           const content = { id, data };
-
           if (change.type === 'added') {
             added.push(content);
           }

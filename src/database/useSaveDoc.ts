@@ -11,6 +11,7 @@ export const useSaveDoc = <TModel = Model>(documentName: DocumentTypes) => {
     async (data: TModel, id?: string) => {
       setIsSaving(true);
       const docId = id || (data as { id?: string }).id;
+    
       if (docId) {
         await setDoc(doc(db, documentName, docId), data, { merge: true });
         setIsSaving(false);

@@ -7,8 +7,9 @@ import { Layout } from './Layout';
 export const ModuleRoutes = () => {
   return (
     <Routes>
-      <Route element={<Layout />} path='*'>
-        <Route element={<ContactList />} path='/*' />
+      <Route element={<Layout />} path='/'>
+        <Route element={<ContactList />} path='/edit' />
+        <Route element={<ContactList />} path='/' />
         <Route element={<NotFound />} path='*' />
       </Route>
     </Routes>
